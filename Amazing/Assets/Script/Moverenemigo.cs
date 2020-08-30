@@ -13,9 +13,9 @@ public class Moverenemigo : MonoBehaviour
     Rigidbody2D rigidbody2D;
     void Start()
     {
-        player=GameObject.FindGameObjectWithTag("Personaje");
+        player=GameObject.FindGameObjectWithTag("Player");
         pocicionInicial=transform.position;
-        //rigidbody2D=GetComponent<Rigidbody2D>();
+        rigidbody2D=GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
