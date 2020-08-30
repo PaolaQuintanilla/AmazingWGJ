@@ -36,8 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Moverenemigo.cs" />
      <Compile Include="Assets\Script\MovimientoPersonaje.cs" />
      <Compile Include="Assets\Script\Seguidor.cs" />
+     <Compile Include="Assets\Script\VidasPersonaje.cs" />
+     <Compile Include="Assets\Script\vidas.cs" />
+     <None Include="Assets\Five Seamless Tileable Ground Textures\read me.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -649,6 +653,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.2D.Animation.Samples.Dependency.csproj">
+      <Project>{aecdeecb-c9f7-c4ce-56e0-d12315848988}</Project>
+      <Name>Unity.2D.Animation.Samples.Dependency</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Samples.Runtime.csproj">
+      <Project>{0f501e0f-401e-0850-a414-04c05d4530d3}</Project>
+      <Name>Unity.2D.Animation.Samples.Runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Samples.Editor.csproj">
+      <Project>{65ccf2d7-3b91-ba14-b61c-7a2e45831e7a}</Project>
+      <Name>Unity.2D.Animation.Samples.Editor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
